@@ -1,0 +1,133 @@
+class - 1
+=========
+
+    -> Python Course 
+
+        -> Full Stack Development 
+            
+            -> HTML / JS + SQL + Django etc 
+
+            -> Build Web Applications 
+
+        -> Data Analytics / Science / Engineering / AI 
+
+            -> Numpy + Pandas + PyTorch etc 
+
+            -> Build Visualizations, Models, Pipelines, Agents etc 
+
+        -> Cloud / DevOps / Testing 
+
+            -> OS, Sys, Boto3 etc 
+
+            -> Build Automation Scripts 
+
+    
+    -> Course Name: Core Python which is common for all above courses 
+
+        -> Python Language Fundamentals 
+
+    
+    -> Python 
+
+        -> Python is a high-level, general-purpose programming language. 
+        Its design philosophy emphasizes code readability with the 
+        use of significant indentation. 
+        Python is dynamically type-checked and garbage-collected.
+
+
+        -> Python is a high-level programming language
+
+            -> High Level Language 
+
+                -> High Level Language means "Human Understandable" language (English)
+
+                -> Python Code Looks Like English
+
+                    num1 = 1.5
+                    num2 = 2.5
+                    # Add two numbers
+                    sum = num1 + num2 
+
+            -> Low Level Language
+
+                -> High Level Language means "Machine Understandable" language
+                (Binary Bits i.e 1010100101)
+
+                -> 01110000 01111001 01110100 01101000 01101111 01101110 -> python
+
+
+
+        -> Python is a general-purpose programming language 
+
+            -> If we can build "multiple types" of Applications
+
+                -> Desktop Applications ? -> Yes
+
+                -> Web Applications ? -> Yes 
+
+                -> API's ? -> Yes 
+
+                -> Automation Scripts ? -> Yes
+
+        -> Domain Specific programming language
+
+            -> If we can build only "Specific type" of Applications
+
+                -> SQL: Structured Query Language a domain-specific language 
+                used to "manage data", especially in a 
+                relational database management system (RDBMS) - MySQL, Postgres etc 
+
+                    -> Desktop Applications ? -> No
+
+                    -> Web Applications ? -> No 
+
+
+
+        -> Python design philosophy emphasizes code readability with the 
+        use of significant indentation.
+
+            -> Code Readability
+
+                Java Code 
+                ---------
+
+                class Main {    
+                    public static void main(String [] args) {
+                        int first = 10;
+                        int second = 10;
+                        
+                        // Add Two Numbers
+                        int sum = first + second;
+                        System.out.println("Sum is" +sum);
+                    }
+                }
+
+                class
+                public
+                static
+                void
+                main
+                []
+                ()
+                {}
+                ;
+                etc 
+
+                Python Code 
+                -----------
+
+                    num1 = 1.5
+                    num2 = 2.5
+                    # Add two numbers
+                    sum = num1 + num2 
+                    print(sum)
+
+
+            -> Indentation 
+
+                -> Indentation refers to Code Structuring 
+
+                -> In Python we use "spaces" for Indentation
+
+                -> ABC Language: https://cdn-blog.adafruit.com/uploads/2020/01/adafruit_2019_3368.jpg
+
