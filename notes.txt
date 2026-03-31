@@ -131,3 +131,145 @@ class - 1
 
                 -> ABC Language: https://cdn-blog.adafruit.com/uploads/2020/01/adafruit_2019_3368.jpg
 
+
+class - 2
+=========
+
+    -> Python is dynamically type-checked and garbage-collected.
+
+        -> Dynamically Type Checked Language (python)
+
+            -> We have a concept called "Data Types" 
+
+                -> Data Type: Categorization Of Data 
+
+                    -> Text, Whole Numbers, Decimal Numbers etc 
+
+            -> NOTE: Dynamically Type Checked Means, We don't need to explicitly
+            specify Data Type  
+
+                -> product = "iphone"
+                -> price = 120000
+                -> rating = 4.5 
+                -> etc 
+
+        -> Static Type Checked Language (java)
+
+            -> NOTE: Static Type Checked Means, We need to explicitly
+            specify Data Type  
+
+                -> String product = "iphone"
+                -> int price = 120000
+                -> double rating = 4.5 
+                -> datatype etc 
+
+
+    -> Python is garbage-collected
+
+        -> Automatically remove "Unused" Data 
+
+            -> Python Automatically Cleans Up Unused Data From Memory / RAM 
+
+                product = "iphone"
+                price = 120000
+                rating = 4.5 
+                print(product)
+                print(price)
+
+            -> Python Cleans Up rating Memory as it's never used in the program 
+
+    
+    -> Python is Interpreted Language 
+
+        -> An Interpreted Language Executes Code Line By Line 
+
+    -> Compiled Language (Java)
+
+        -> A Compiled Language Translates the Code into Byte Code and then
+        executes all the code at once 
+
+        -> NOTE: Performance wise Compiled Languages are FASTER 
+
+    
+    -> Programming Paradigms 
+
+        -> A programming paradigm is a relatively high-level way to 
+        conceptualize and structure the implementation of a computer program.
+
+        -> Problem: How To Reach Institute ? 
+
+            -> Solution 1: I'll Come By Walk 
+            -> Solution 2: I'll Come By Bike 
+            -> Solution 3: I'll Come By Car  
+
+        -> We Have Two Popular Types 
+
+            -> Imperative Approach 
+
+                -> Focus is On "HOW TO DO"
+
+                -> Object Oriented Approach
+
+            -> Declarative Approach 
+
+                -> Focus is On "WHAT TO DO"
+
+                -> Functional Oriented Approach
+
+        -> NOTE: Python uses multi paradigm approach i.e we can use 
+        both Imperative Approach & Declarative Approach 
+
+            -> https://miro.medium.com/v2/resize:fit:1200/1*Jf5GJS1XtRsHWbZldcvOiQ.png
+
+
+    -> Key Features Of Python / Why Python ? 
+
+        -> Simplicity & Easy Readability
+
+        -> Best Prototype Language
+
+        -> High Level Language
+        
+        -> Interpreted Language 
+
+        -> Dynamically Type Checked 
+
+        -> Versatility (*)
+
+            -> Data Oriented / Web Applications / API's / AI / Automation / DevOps etc 
+
+            -> Wide Variety Of Modules Support
+
+        -> Multi Paradigm Approach 
+
+        -> Open Source (FREE)
+
+         -> One of the Most Popular Language in industry now 
+
+            -> List Of Popular Applications Where Python is used 
+
+            ->  https://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites  
+
+
+    -> System Requirements For This Course (Practical Labs)
+
+        -> i3 / i5 Processor 
+
+        -> 4 GB RAM / 8 GB RAM 
+
+        -> 500 GB HDD / 500 GB SSD 
+
+    -> Softwares 
+
+        -> Install Python Interpreter 
+
+            -> https://python.org/
+
+            -> In Windows / Linux / Mac 
+
+        -> IDE: Integrated Development Environment 
+
+            -> Tool for writing code 
+                (syntax highlight, auto code completion, install plugins etc)
+
+            -> Visual Studio Code (VS Code)
