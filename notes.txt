@@ -469,3 +469,118 @@ class - 4
     -> Manipulate Data 
 
         -> Then we need to use "Operators"
+
+
+class - 5
+=========
+
+    -> Operators
+
+        -> Operators are special "Symbols" and "keywords", which Performs 
+        Operations on Variables and their Values.
+
+        -> There are different types of operators, to deal with different types of data 
+
+        -> Arithmetic Operators 
+
+            -> To Perform Mathematical Calculations 
+
+                -> + - * / % 
+
+                -> // - floor division (same as division but rounds off result)
+                -> ** - Exponentiation (same as calculating powers)
+
+        -> Compound Assignment Operators         
+
+            -> Assignment Operator is = (used for assigning a value to Variable)
+
+            -> Compound Assignment Operators Combine Arithmetic Operators 
+            with Assignment Operators for "short hand code" (concise code)
+
+                -> x = 10 
+                
+                -> x = x + 5 (long form)
+                -> x = x * 5 (long form)
+
+                -> x += 5 (short form)
+                -> x *= 5 (short form)
+
+                -> NOTE: x = x + 5 and x += 5 both does same Operation
+
+            -> In Other Programming Languages, We got Increment & Decrement Operators
+
+                -> Increment (++) - Increase the value 
+                -> Decrement (--) - Decrease the value 
+
+                -> NOTE: Above Operators are not supported in python 
+
+
+        -> Comparison Operators 
+
+            -> Comparison Operators are used for Comparing Values
+            and result is in boolean type (True/False)
+
+            -> Used in Conditional Checks 
+
+                -> ==, !=, >, <, >=, <= 
+
+        -> Logical Operators 
+
+            -> Logical Operators are used for Performing Logical Operations
+
+            -> Used to check multiple conditions and result is in boolean type (True/False)
+
+                -> and : if both conditions are True, then only result is True, otherwise False 
+                -> or : if one of the conditions is True, then result is True, otherwise False 
+                -> not : negates the result, if true then false and vice versa  
+
+                            X       Y       X and Y    X or Y    not X    not Y
+                            T       T           T         T         F       F
+                            T       F           F         T         F       T
+                            F       T           F         T         T       F
+                            F       F           F         F         T       T 
+
+
+        -> Membership Operators 
+
+            -> Used for checking if an object in in the given sequence 
+
+                -> in: return True, if given object is in sequence
+
+                -> not in: return True, if given object is not in sequence
+
+        
+        -> Identity Operators 
+
+            -> Used to check if objects are same 
+
+                -> is: return True, if objects are same  
+                
+                -> is not: return True, if objects are not same  
+
+            -> NOTE: 
+            
+                -> (Equality operator ==): Compares the values of two objects. 
+                It returns True if their contents are the same, 
+                regardless of where they are stored in memory.
+
+                -> is (Identity operator): Compares the identity (memory address) of two objects. 
+                It returns True only if both variables refer to the exact same object in memory. 
+
+
+        -> Bitwise Operators 
+
+            -> Used in Low Level Programming (1010101011)
+
+                -> & - if both bits are 1, then result is 1 
+                -> | - if one of the bits is 1, then result is 1 
+                -> etc 
+
+
+        -> NOTE: Implement EMI Calculation For Car Purchase 
+
+            -> https://www.cardekho.com/renault/duster
+
+                -> Calculate EMI 
+
+                -> https://www.moneyseth.com/media/custom_blog/2021/05/05/emi-calculator_l9Xlp4V.png
