@@ -584,3 +584,82 @@ class - 5
                 -> Calculate EMI 
 
                 -> https://www.moneyseth.com/media/custom_blog/2021/05/05/emi-calculator_l9Xlp4V.png
+
+
+class - 6
+=========
+
+    -> Data Types 
+
+        -> Data Types are "Categorization" that defines, what kind of data a variable can hold 
+    
+        -> Numeric Types 
+
+            -> int: 1,2,3,0,-1,-2 etc 
+
+            -> float: 3.5,1.5,1.0,-1.5 etc 
+
+            -> complex: in maths we have a + ib 
+
+                -> In Python same concept is represented as a + bj 
+
+        -> Boolean Type 
+
+            -> bool: Represents True / False (case sensitive)
+
+        -> NoneType 
+
+            -> NoneType: Represents nothing i.e Absence Of Value (case sensitive)   
+
+        -> String Type:
+
+            -> str: String Represents a sequence of characters enclosed in '' or " "
+    
+    
+    -> Simple Data Types: Holds "Single Value" in a variable 
+
+    -> Complex Data Types: Holds "Multiple Values" in a variable  
+
+    -> Complex Data Types
+
+        -> List: List is a complex datatype i.e it holds multiple values represented using []
+
+        -> Tuple: Tuple is a complex datatype i.e it holds multiple values represented using ()
+
+        -> Set: Set is a complex datatype i.e it holds multiple values represented using {}
+
+        -> Frozenset: Frozenset is a complex datatype i.e it holds multiple values represented 
+        using class called "frozenset"
+
+        -> Dictionary: Set is a complex datatype i.e it holds multiple "key values" 
+        represented using {}
+
+    -> NOTE: All the above data types are pre-defined in Python Standard Library 
+
+    -> NOTE: Based on Custom Requirements coming from clients, we can create our own data types 
+
+    -> Creating Custom Data Types 
+
+        -> Syntax
+
+            class CustomDataType:
+                statements 
+
+
+    -> Type Conversion / Implicit Conversion [ Automatic ]
+
+        -> Conversion Of One Data Type To Another Data Type, Automatically By Python 
+
+        -> Type Conversion is SAFE i.e no DATA LOSS 
+    
+    -> Type Casting / Explicit Conversion [ Manual ]
+
+        -> Conversion Of One Data Type To Another Data Type, Manually By Developer 
+
+        -> Type Casting is NOT SAFE i.e DATA LOSS might occur 
+
+        -> Syntax 
+
+            -> using casting Functions i.e use datatype function_name before variable 
+
+            -> datatype(value) 
