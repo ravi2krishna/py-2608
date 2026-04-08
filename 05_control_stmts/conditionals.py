@@ -84,3 +84,51 @@ else:
 age = int(input("Enter Your Age Again: "))
 status = "You Can Vote" if age >= 18 else "You Cannot Vote" 
 print(status)
+
+# elif ladder 
+marks = int(input("Enter Marks: "))
+if marks >= 35:
+    print("PASSED")
+else:
+    print("FAILED")   
+    
+# check for grades      
+marks = int(input("Enter Marks: "))
+if marks >= 90:    
+    print("A Grade")
+elif marks >= 75:    
+    print("B Grade")
+elif marks >= 60:    
+    print("C Grade")        
+elif marks >= 50:    
+    print("D Grade")
+elif marks >= 35:    
+    print("E Grade")
+else:
+    print("FAILED")   
+
+# match-case 
+error_code = int(input("What Error Code Did You See: "))
+match error_code:
+    case 403:
+        print("Forbidden Error")
+    case 404:
+        print("Not Found Error")
+    case 502:
+        print("Bad Gateway Error")
+    case _:
+        print("Unknown Error")
+
+user_role = input("Enter Your Role: ")
+match user_role:
+    case "lead" | "manager":
+        print("You have Read, Write & Delete Access")
+    case "developer" | "tester":
+        print("You have Only Read & Write Access")
+    case "guest":
+        print("You have Only Read Access")
+    case _:
+        print("Access Denied")
+        
+
+

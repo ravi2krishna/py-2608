@@ -748,3 +748,90 @@ class - 7
 
             -> Syntax 
                 value_if_true if condition else value_if_false 
+
+
+class - 8
+=========
+
+    -> Under Conditional Structures / Statements we have 
+
+        -> elif ladder 
+
+            -> elif is a keyword that stands for "else if" 
+
+            -> It is used in conditional statements to check "multiple conditions"
+            sequentially after an initial if statement
+
+            -> Syntax
+
+                if condition:
+                    statements
+                elif condition:
+                    statements
+                elif condition:
+                    statements
+                elif condition:
+                    statements
+                elif condition:
+                    statements
+                else:
+                    statements
+
+
+    -> match case 
+
+        -> The match/case statement (introduced in Python 3.10) is used for 
+        structural "pattern matching"
+
+            -> https://miro.medium.com/v2/0*emwCsVL6_veL1d0I
+
+        -> In other languages we call it as switch-case
+
+        -> Syntax 
+
+            match expression:
+                case pattern_1:
+                    # code block 1    
+                case pattern_2:
+                    # code block 2
+                case pattern_3:
+                    # code block 3
+                .
+                .
+                .
+                case _:
+                    # default code block
+
+    -> Nested Conditionals 
+
+        -> Conditionals inside Conditionals
+
+        -> Nested conditions in Python involve placing an if or if/else statement 
+        inside another if, elif, or else block.
+
+        -> This allows the program to evaluate multiple criteria sequentially, 
+        where the inner condition is only checked if the outer condition is true. 
+
+
+
+    -> Looping Structures / Statements (Iteration Statements)
+
+        -> Loops in Python are used to "repeatedly" execute a block of code 
+        until a specific condition is met or for each item in a sequence.
+
+        -> The two primary types of loops are "for" loops and "while" loops. 
+
+        -> NOTE: When you want to do a task multiple times, use loops 
+
+        -> while loop 
+
+            -> while loops execute a block of code repeatedly 
+            as long as a specified condition remains True
+
+            -> Syntax
+
+                while condition:
+                    statements
+
+            -> NOTE: We use while generally, when we don't know number of
+            Iterations/Repetitions in advance
