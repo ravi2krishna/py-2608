@@ -1,0 +1,33 @@
+# Using All Control Structures
+
+# Simulate Real World Functionality Using 
+Conditionals, Loops & Branching
+
+# Simulate Authentication Functionality
+ATM / OTP / Passwords etc 
+
+-> The User will be prompted to Enter ATM Pin (OTP/Password) 
+
+-> The Pin Should be 4 Digit Only 
+
+-> Assume Correct Pin is stored in a variable for Comparison
+
+-> If the Pin given is not 4 Digit Number Display Error Message
+
+    -> Transaction Failed - Pin Must be 4 Digit Number 
+
+    -> Reduce an attempt 
+
+-> If the Pin given is Incorrect, then Display Error Message
+
+    -> Transaction Failed - Incorrect Pin 
+
+    -> Reduce an attempt 
+
+-> If the Pin given is Correct, then Display Success Message
+
+    -> Transaction Success
+
+-> After 3 attempts, Display 
+
+    -> Maximum attempt reached, Try after 24 Hours 

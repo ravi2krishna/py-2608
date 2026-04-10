@@ -877,3 +877,18 @@ class - 9
         -> A nested loop in Python is a "loop placed inside the body of another loop". 
         This structure is used to handle multidimensional data (like grids or lists within lists), 
         generate patterns, and perform actions that require "multiple layers of iteration".
+
+
+class - 10
+==========
+
+    -> Branching Structures / Statements (Jump Statements)
+
+        -> Used within loops, these statements also control the flow of execution, 
+        allowing you to exit a loop early (break) or skip the current iteration (continue). 
+
+            -> break: help you exit the loops 
+
+            -> continue: help you skip the current iteration 
+
+            -> pass: acts as a placeholder, does nothing
