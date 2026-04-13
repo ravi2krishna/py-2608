@@ -892,3 +892,95 @@ class - 10
             -> continue: help you skip the current iteration 
 
             -> pass: acts as a placeholder, does nothing
+
+
+class - 11
+==========
+
+    -> Strings 
+
+        -> Strings are one of the "Most Widely Used Datatype" in any programming language 
+
+            -> https://www.instagram.com/
+
+            -> https://www.instagram.com/accounts/emailsignup/?next=
+
+            -> NOTE: Most of the inputs we process from web pages of an Application are Strings 
+
+        -> In Python, a string is a "sequence of characters", used to represent text. 
+
+        -> Strings are widely used for handling and manipulating textual information.
+
+        -> Syntax for representing strings 
+
+            -> Strings can be enclosed in '' or " " or ''' ''' or """ """
+
+                -> Single Line Strings: Use '' or " "
+
+                -> Multi Line Strings: Use ''' ''' or """ """
+
+
+        -> Rules When Defining Strings 
+
+            -> When you use single quote in a string, enclose them in double quotes 
+            -> When you use double quote in a string, enclose them in single quotes 
+            -> When you use both single quote and double quote in a string, 
+                enclose them in triple single / double quotes 
+
+    -> Accessing Strings 
+
+        -> Indexing 
+
+            -> String indexing in Python allows access to "individual characters within a string" 
+            using their "position", known as the "index".
+
+            -> Python uses zero-based indexing, meaning the first character is at index 0, 
+            the second at index 1, and so on.
+
+                -> print(string[index])
+
+            -> Positive Indexing:
+            Starts from the beginning of the string.
+            The index of the first character is 0.
+        
+            -> Negative Indexing:
+            Starts from the end of the string.
+            The index of the last character is -1.
+
+            -> text = "python"
+
+            0 1 2 3 4    5
+            p y t h o    n 
+           -6 -5 -4 -3 -2 -1
+
+        -> NOTE: Accessing index out of range will cause Error  
+
+        -> NOTE: we have dir() function, which helps you know
+        what operations you can perform on a datatype
+
+        -> NOTE: we have len() function, which helps you know
+        number of items in container
+
+    
+    -> Slicing
+
+        -> String slicing in Python is a method for extracting a portion (substring) 
+        from a larger string. It utilizes the slice operator [] with specific 
+        indices to define the desired segment.
+
+        -> syntax 
+
+            string[start:end:step]
+
+                -> start (optional): The index where the slice begins (inclusive). 
+                    If omitted, it defaults to 0 (the beginning of the string).
+                -> end (optional): The index where the slice ends (exclusive). 
+                    The character at this index is not included. 
+                    If omitted, it defaults to the length of the string (the end of the string).
+                -> step (optional): The increment between each index during slicing. 
+                    If omitted, it defaults to 1. 
+                    A negative step value can be used to slice in reverse.
+            
+            -> Earlier we used range()
+
+                range(start,end,step)
