@@ -984,3 +984,37 @@ class - 11
             -> Earlier we used range()
 
                 range(start,end,step)
+
+
+class - 12
+==========
+
+    -> String Concatenation 
+
+        -> Joining the strings using + operator
+
+    -> Formatted String Literals (f-strings)
+
+        -> Using Interpolation {} with f 
+
+    -> String Repetition
+
+        -> Repeat Strings Using * operator
+
+    -> String Immutability 
+
+        -> Immutability means cannot be modified or changed 
+
+        -> String are immutable in nature meaning strings cannot be modified
+
+
+    -> String Methods 
+
+        -> String methods in Python are built-in functions/methods that operate on 
+        string objects, allowing for various manipulations, transformations, and checks. 
+
+         -> It is important to note that strings in Python are immutable, 
+        meaning these methods do not modify the original string but 
+        instead return a new string with the applied changes.
+    
+        -> https://docs.python.org/3/library/stdtypes.html#string-methods
