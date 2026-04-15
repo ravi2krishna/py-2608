@@ -54,3 +54,61 @@ elif mobile.startswith("+1"):
     print("Calling USA Number - Charged In Dollars")      
 else:
     print("Invalid Number - Only India, France and USA Supported")
+
+    
+# Simulate Email Synchronization 
+# endwith() method returns True if the string ends with the specified value, otherwise False.
+source_email = input("Enter Source Email ID: ")
+source_email_status = source_email.endswith("@gmail.com")
+destination_email = input("Enter Destination Email ID: ")
+print(f"Email Is Gmail {source_email_status}")
+if source_email.endswith("@gmail.com") and destination_email.endswith("@gmail.com"):
+    print("Email Backup Process Started")
+else:
+    print("Email Backup Process Failed - Source & Destination Didn't Match")
+   
+    
+# Simulate Data Operations Work: CSV Data from a file and perform some operations 
+# https://www.datablist.com/learn_images/csv/google_sheet_csv.png
+# https://www.slashgear.com/img/gallery/csv-files-explained-what-they-are-and-how-to-open-them/what-are-csv-files-1699455969.jpg
+# Name,Email,Age,City,Job_Role
+# emp_data = "Johnny,john@apple.com,45,Hyd,Developer"
+# Requirement: Display Employee Name & Job Role 
+emp_data = "Johnny,john@apple.com,45,Hyd,Developer"
+emp_name = emp_data[0]
+print("Employee Name: ",emp_name)
+
+emp_name = emp_data[0:6]
+print("Employee Name: ",emp_name)
+
+emp_data = "Ravi,ravi@apple.com,45,Hyd,Admin"
+emp_name = emp_data[0:6]
+print("Employee Name: ",emp_name)
+
+# Using Above Approach we are hard coding logic, which is not good practice 
+
+# split() method is used to break a string into a list of smaller strings 
+# based on a specific separator default is space
+emp_data = "Johnny john@apple.com 45 Hyd Developer"
+emp_data = "Ravi ravi@apple.com 45 Hyd Admin"
+emp_data = "Johnny john@apple.com 45 Hyd Developer"
+emp_data_extraction = emp_data.split()
+print(emp_data_extraction)
+print("Employee Name: ",emp_data_extraction[0])
+
+emp_data = "Krishna,ravi2krishna@gmail.com,34,Hyd,Developer"
+emp_data_extraction = emp_data.split(",")
+print(emp_data_extraction)
+print("Employee Name: ",emp_data_extraction[0])
+print("Employee Role: ",emp_data_extraction[-1])
+
+# Simulate Amazon Order Email Confirmation Template Based System
+order_template = "Hello your order with order_id has been shipped"
+order_ids = "AMZ-123,AMZ-234,AMZ-345,AMZ-456,AMZ-567"
+order_ids_extracted = order_ids.split(",")
+# print(dir(order_id_extracted)) # __iter__
+for order_id in order_ids_extracted:
+    # replace(): To replace substrings in a Python string -> replace(old, new)
+    send_email = order_template.replace("order_id",order_id)
+    print(send_email)
+    

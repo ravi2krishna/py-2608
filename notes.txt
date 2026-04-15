@@ -1018,3 +1018,38 @@ class - 12
         instead return a new string with the applied changes.
     
         -> https://docs.python.org/3/library/stdtypes.html#string-methods
+
+
+class - 13
+==========
+
+    -> String Methods In Applications Point Of View 
+
+    -> Simple Data Types 
+
+        -> Can Hold "One Value" in a variable 
+
+            -> data = 10
+            -> data = 10.5
+            -> data = "hello"
+
+    -> Complex Data Types 
+
+        -> Can Hold "Multiple Values" in a variable 
+
+            -> data = 10,20,30,40,50
+            -> data = 10.5,20.0,30.3,40.1,50.0
+            -> data = "hello","hi","hey"
+
+
+    -> Python Provides Following Classes To Work With Complex Data Types (*)
+
+        -> List 
+
+        -> Tuple 
+
+        -> Dictionary
+
+        -> Set 
+
+        
