@@ -1053,3 +1053,45 @@ class - 13
         -> Set 
 
         
+class - 14
+==========
+
+    -> Lists 
+
+        -> List is a data structure which allows you to "store multiple values"
+        in a single variable, each value is separated with , 
+
+        -> Lists are represented using [ ] or using "list" class
+
+    -> Accessing Data In Lists 
+
+        -> Like in Strings, we have index concept in lists too 
+
+        -> Index starts from Zero 
+
+        -> Supports Both Positive and Negative Index 
+
+        -> Slicing is same as Strings 
+
+        -> Loops we can Apply 
+
+        -> Operators we can Apply 
+
+        -> Conditionals we can Apply 
+
+        -> Duplicates Allowed 
+
+        -> Insertion Order Is Preserved 
+
+
+    -> List Characteristics 
+
+        -> Mutable: Lists are Mutable in nature 
+
+        -> Order: Lists are Order(Order Preserved)
+
+        -> Duplicates: Lists Allow Duplicates 
+
+    
+    -> New Requirement: Store Employee Details like AADHAR or PAN, 
+    Do Not Allow Updating AADHAR_ID or PAN_ID
