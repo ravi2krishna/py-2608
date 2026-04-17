@@ -1095,3 +1095,95 @@ class - 14
     
     -> New Requirement: Store Employee Details like AADHAR or PAN, 
     Do Not Allow Updating AADHAR_ID or PAN_ID
+
+
+class - 15
+==========
+
+    -> Tuples 
+
+        -> Tuple is a data structure which allows you to store multiple values
+        in a single variable, each value is separated with , 
+
+        -> Tuples are represented using ( ) or using "tuple" class
+
+    -> Accessing Data In Tuples 
+
+        -> Like in Strings, we have index concept in Tuples too 
+
+        -> Index starts from Zero 
+
+        -> Supports Both Positive and Negative Index 
+
+        -> Slicing is same as Strings 
+
+        -> Loops we can Apply 
+
+        -> Operators we can Apply 
+
+        -> Conditionals we can Apply 
+
+        -> Duplicates Allowed 
+
+        -> Insertion Order Is Preserved 
+
+    -> NOTE: Tuples are "IMMUTABLE" (Cannot be Changed i.e FIXED DATA)  
+
+    -> NOTE: Tuples are "READ ONLY LISTS"   
+
+    -> Tuples Characteristics 
+
+        -> Immutable: Tuples are Immutable in nature(Cannot be Changed) 
+
+        -> Order: Tuples are Order(Order Preserved)
+
+        -> Duplicates: Tuples Allow Duplicates   
+
+
+    -> Dictionaries 
+
+        -> Dictionary is a data structure which allows you to store multiple "key values"
+        in a single variable, each value is separated with ,
+
+        -> Dictionaries are represented using { } or using "dict" class 
+
+        -> key:value (pair/item)
+
+            -> {"id":101,"name":"ravi","gpa":9.5}
+
+    
+    -> Accessing Data In Dictionaries 
+
+        -> NOTE: Like in Strings, we DON'T have index concept in Dictionaries
+
+            -> Dictionaries don't support Indexing
+
+            -> Access individual elements using "key" 
+
+        -> Slicing is not supported in Dictionaries
+
+        -> Loops we can Apply 
+
+        -> Operators we can Apply 
+
+        -> Conditionals we can Apply 
+
+    -> Duplicates Allowed In Dictionaries With Some Conditions 
+
+            -> Values can be Duplicated 
+
+            -> Keys Should be Unique 
+
+                -> If we add duplicates key, latest will override old key 
+            
+        -> NOTE: Keys should be Immutable Objects Only
+
+            -> Most Of the times the keys will be Strings  
+
+        -> NOTE: Values can be Any Object 
+
+        -> Insertion Order Is Preserved 
+
+    -> NOTE: Dictionaries Look Like JSON Data 
+
+        -> https://media.licdn.com/dms/image/v2/D4D12AQGwOUMYbhUu-A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1682148646113?e=2147483647&v=beta&t=qeCSY5Ktzx2jkeq7suYaSBV_-OS_18P-yuabrIhNWcU
