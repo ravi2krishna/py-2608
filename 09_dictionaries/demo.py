@@ -115,3 +115,31 @@ students = {
         "courses_fee": (10000,15000,25000)
     }
 }
+
+print(type(students))
+# Get all Students Data 
+print(students)
+
+print("=" * 50)
+
+# Get 101 Student Details 
+print(students["101"])
+
+print("=" * 50)
+
+# Get Courses Enrolled By Krishna
+print(students["102"])
+print(students["102"]["courses"])
+print("Second Course Enrolled By Krishna is: ",students["102"]["courses"][1])
+
+print("=" * 50)
+
+# Check Krishna is Google Customer or not 
+if students["102"]["email"].endswith("@gmail.com"):
+    print("Google Customer")
+else:
+    print("Not Google Customer")
+    
+print("=" * 50)
+
+print(dir(students))

@@ -1187,3 +1187,52 @@ class - 15
     -> NOTE: Dictionaries Look Like JSON Data 
 
         -> https://media.licdn.com/dms/image/v2/D4D12AQGwOUMYbhUu-A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1682148646113?e=2147483647&v=beta&t=qeCSY5Ktzx2jkeq7suYaSBV_-OS_18P-yuabrIhNWcU
+
+
+class - 16
+==========
+
+    -> Dictionaries Characteristics 
+
+        -> Mutable: Dictionaries are mutable in nature(Can be Changed) i. Value
+
+            -> Immutable: Dictionary keys 
+
+        -> Order: Dictionaries are Ordered(Order Preserved)
+
+        -> Duplicates: Dictionaries Allow Duplicates for Values Only,
+        Duplicated keys allowed, but overridden
+
+
+
+    -> Sets 
+
+        -> Set is a data structure which allows you to store multiple "values"
+        in a single variable, each value is separated with ,
+
+        -> Sets are represented using { } or using "set" class 
+
+    
+    -> Accessing Data In Sets 
+
+        -> NOTE: Like in Strings, we DON'T have index concept in Sets
+
+            -> Sets don't support Indexing
+
+        -> Slicing is not supported in Sets
+
+        -> Loops we can Apply 
+
+        -> Operators we can Apply 
+
+        -> Conditionals we can Apply 
+
+    -> Duplicates NOT Allowed In Sets i.e Removes duplicates by default
+        
+    -> Insertion Order Is Not Preserved (Random)
+
+    -> NOTE: To Easily Remember Sets use (UUU)
+
+        -> U - Unique Data 
+        -> U - Unordered Data 
+        -> U - Unindexed Data 
