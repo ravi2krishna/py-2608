@@ -1236,3 +1236,73 @@ class - 16
         -> U - Unique Data 
         -> U - Unordered Data 
         -> U - Unindexed Data 
+
+
+class - 17
+==========
+
+    -> Set Methods / Operations 
+
+    -> Set Characteristics 
+
+        -> Mutable: Sets are Mutable in nature(Can be Changed) 
+
+        -> Order: Sets are UnOrdered(Order Not Preserved)
+
+        -> Duplicates: Set Doesn't Allow Duplicates (Unique)
+
+    
+    -> frozenset
+
+        -> frozenset is a data structure which allows you to store multiple "values"
+        in a single variable, each value is separated with ,
+
+        -> frozenset are represented using { } or using "frozenset" class 
+
+    
+    -> Accessing Data In frozenset 
+
+        -> NOTE: Like in Strings, we DON'T have index concept in frozenset
+
+            -> frozenset don't support Indexing
+
+        -> Slicing is not supported in frozenset
+
+        -> Loops we can Apply 
+
+        -> Operators we can Apply 
+
+        -> Conditionals we can Apply 
+
+    -> Duplicates NOT Allowed In frozenset i.e Removes duplicates by default
+        
+    -> Insertion Order Is Not Preserved (Random)
+
+    -> NOTE: To Easily Remember frozenset use (UUU)
+
+        -> U - Unique Data 
+        -> U - Unordered Data 
+        -> U - Unindexed Data 
+
+    -> frozenset Methods / Operations 
+
+        -> Same as sets without support for methods that does update to sets 
+
+    -> NOTE: frozenset are READ ONLY sets
+
+    -> frozenset Characteristics 
+
+        -> Immutable: frozenset are Immutable in nature(Cannot be Changed) 
+
+        -> Order: frozenset are UnOrdered(Order Not Preserved)
+
+        -> Duplicates: frozenset Doesn't Allow Duplicates (Unique)
+
+    
+-> How / When To Use Above Data Structures in Applications ? 
+
+    -> Lists            (When To Use)
+    -> Tuples           (When To Use)
+    -> Dictionaries     (When To Use)    
+    -> Sets             (When To Use)
+    -> Frozenset        (When To Use)
