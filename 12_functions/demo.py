@@ -96,3 +96,111 @@ def employee_info(emp_name,emp_email,emp_location):
     
 employee_info("hyderabad","ravi","ravi2krishna@gmail.com") # incorrect order    
 employee_info(emp_location="hyderabad",emp_name="ravi",emp_email="ravi2krishna@gmail.com") 
+
+print("=" * 20)
+
+# Without Default Arguments 
+def employee_info(emp_name,emp_email,emp_location,org_name):
+    print(f"Hi {emp_name} your email is {emp_email} and working for {org_name} at location {emp_location}")
+   
+employee_info(emp_location="hyderabad",emp_name="ravi",emp_email="ravi2krishna@gmail.com",org_name="Google")  
+employee_info(emp_location="pune",emp_name="krishna",emp_email="ravi2krishna@gmail.com",org_name="Google")  
+employee_info(emp_location="delhi",emp_name="mike",emp_email="mike@gmail.com",org_name="Google")  
+
+    
+print("=" * 20)
+
+# With Default Arguments -> Org Name is Always Google i.e Default Arguments
+def employee_info(emp_name,emp_email,emp_location,org_name="Google"):
+    print(f"Hi {emp_name} your email is {emp_email} and working for {org_name} at location {emp_location}")
+
+employee_info(emp_location="hyderabad",emp_name="ravi",emp_email="ravi2krishna@gmail.com")  
+employee_info(emp_location="pune",emp_name="krishna",emp_email="ravi2krishna@gmail.com")  
+employee_info(emp_location="delhi",emp_name="mike",emp_email="mike@gmail.com")  
+# If an argument is provided, it overrides the default -> works for META 
+employee_info(emp_location="new york",emp_name="Mark",emp_email="mark@gmail.com",org_name="META")  
+
+print("=" * 20)
+
+# Placement Requirement: Default arguments must always be placed after any non-default arguments
+# Non-default argument follows default argument
+# def employee_info(emp_name,emp_email,emp_location,org_name="Google",emp_mobile):
+#     print(f"Hi {emp_name} your email is {emp_email} and working for {org_name} at location {emp_location}")
+
+def employee_info(emp_name,emp_email,emp_location,emp_mobile,org_name="Google"):
+    print(f"Hi {emp_name} your email is {emp_email} and working for {org_name} at location {emp_location}")
+    
+def employee_info(emp_name,emp_email,emp_location,org_name="Google",emp_mobile="+91"):
+    print(f"Hi {emp_name} your email is {emp_email} and working for {org_name} at location {emp_location}")
+
+# Arbitrary Positional Arguments
+
+def add_numbers_one(n1):
+    print(n1) 
+
+def add_numbers_two(n1,n2):
+    print(n1,n2)  
+
+def add_numbers_three(n1,n2,n3):
+    print(n1,n2,n3) 
+
+def add_numbers_ten(n1,n2,n3,n10):
+    print(n1,n2,n3,n10) 
+
+add_numbers_one(10)
+add_numbers_two(10,20)
+add_numbers_three(10,20,30)
+add_numbers_ten(10,20,30,100)
+
+print("=" * 20)
+
+def add_numbers(*nums):
+    print(nums)  
+    
+add_numbers(10)   
+add_numbers(10,20)   
+add_numbers(10,20,30)   
+add_numbers(10,20,30,40,50,60,70,80,90,100)   
+
+print("=" * 20)
+
+def add_numbers(*nums):
+    total = 0
+    for num in nums:
+        total += num  
+    print(f"Total Sum is {total}")
+    
+add_numbers(10)   
+add_numbers(10,20)   
+add_numbers(10,20,30)   
+add_numbers(10,20,30,40,50,60,70,80,90,100)   
+
+print("=" * 20)
+# Real world use case can be ecommerce application product cart 
+
+# Arbitrary Keywords Arguments
+# def profile_fname(fname):
+#     print(fname)
+
+def profile(**info):
+    print(info)
+# profile(fname)    
+profile(fname="Ravi")
+profile(fname="Ravi",lname="Krishna")
+profile(fname="Ravi",lname="Krishna",email="ravi2krishna@gmail.com")
+
+print("=" * 20)
+
+# Real world use case -> jan=3000,feb=4000,mar=2000 
+# Requirement: Total Transactions Value and Number Of Transactions Made 
+def bank_transactions(**transactions):
+    print(transactions)
+    total = 0
+    transaction_count = 0
+    for transaction in transactions:
+        total += transactions[transaction]
+        transaction_count += 1
+    print(f"Total Transactions Value is {total} for {transaction_count} Transactions")
+        
+bank_transactions(jan=3000,feb=4000,mar=2000)
+bank_transactions(jan=3000,feb=4000,mar=2000,apr=5000,may=6000,june=9000)

@@ -1417,3 +1417,43 @@ class - 20
         in the argument list. 
         
         -> This offers several advantages, primarily in terms of code readability and flexibility.
+
+
+class - 21
+==========
+
+    -> Default Arguments 
+
+        -> In Python, default arguments allow you to define a function parameter 
+        with a "pre-assigned" value. 
+
+        -> If a caller does not provide an argument for that parameter during a function call, 
+        the default value is automatically used. 
+        If an argument is provided, it overrides the default.
+
+        -> Placement Requirement: Default arguments must always be placed after 
+        any non-default (positional) arguments in the function definition. 
+        Attempting to place a non-default argument after a 
+        default argument will result in a SyntaxError.
+
+
+    -> Arbitrary Positional Arguments
+
+        -> In Python, arbitrary positional arguments allow a function to accept 
+        a unknown number of non-keyword arguments. 
+        This is achieved by placing an asterisk (*) before a parameter name 
+        in the function definition. 
+
+        -> This parameter will then collect all the extra positional arguments passed 
+        to the function into a single tuple. 
+
+    
+    -> Arbitrary Keywords Arguments
+
+        -> In Python, arbitrary keyword arguments allow a function to accept 
+        a unknown number of keyword arguments. 
+        This is achieved by placing an asterisk (**) before a parameter name 
+        in the function definition. 
+
+        -> This parameter will be collected into a dictionary, where the names will be keys and 
+        values will be dictionary values 
