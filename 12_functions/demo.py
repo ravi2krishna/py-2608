@@ -327,3 +327,60 @@ def increment():
     return count 
 
 print(increment())
+
+
+# Without lambda function i.e Regular functions 
+def add(a,b):
+    return a+b 
+print(add(200,300))
+
+# With lambda function
+# lambda arguments:expression
+lambda a,b:a+b 
+print((lambda a,b:a+b)(100,200)) # One liner function
+
+# Without lambda function
+def is_even_num(num):
+    if num % 2 == 0:
+        return True 
+    else:
+        return False
+    
+print(is_even_num(11))
+print(is_even_num(10))
+
+# With lambda function
+# lambda arguments:expression
+lambda num:num % 2 == 0
+print((lambda num:num % 2 == 0)(100))
+print((lambda num:num % 2 == 0)(101))
+
+# Without lambda 
+def employee_info(emp_name,emp_email,emp_location):
+    print(f"Hi {emp_name} your email is {emp_email} and work location is {emp_location}") 
+employee_info(emp_location="hyderabad",emp_name="ravi",emp_email="ravi2krishna@gmail.com") 
+
+# With lambda function
+# lambda arguments:expression
+print((lambda emp_name,emp_email,emp_location:print(f"Hi {emp_name} your email is {emp_email} and work location is {emp_location}"))(emp_location="hyderabad",emp_name="ravi",emp_email="ravi2krishna@gmail.com"))
+
+
+# Without Higher Order Function - map()
+# Write a script/program to take a list of numbers and return the square of list of numbers
+# [1,2,3,4,5]   ==>     [1,4,9,16,25]
+def square_list(numbers):
+    squared_list = []
+    for num in numbers:
+        squared_list.append(num*num)
+    return squared_list
+
+print(square_list([1,2,3,4,5]))
+
+
+# With Higher Order Function - map()
+# Write a script/program to take a list of numbers and return the square of list of numbers
+# [1,2,3,4,5]   ==>     [1,4,9,16,25]
+# syntax ==> map(function, iterable)
+map((lambda num:num*num), [1,2,3,4,5])
+print(map((lambda num:num*num), [1,2,3,4,5]))
+print(list(map((lambda num:num*num), [1,2,3,4,5])))
