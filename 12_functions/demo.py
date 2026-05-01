@@ -384,3 +384,141 @@ print(square_list([1,2,3,4,5]))
 map((lambda num:num*num), [1,2,3,4,5])
 print(map((lambda num:num*num), [1,2,3,4,5]))
 print(list(map((lambda num:num*num), [1,2,3,4,5])))
+
+# Real World Use Case Of Working with Lambda & Higher Order Functions 
+products = [
+    {"name": "Laptop", "price": 80000, "discount": 10},
+    {"name": "Phone", "price": 50000, "discount": 5},
+    {"name": "Headphones", "price": 2000, "discount": 15},
+    {"name": "Charger", "price": 1500, "discount": 0},
+    {"name": "Camera", "price": 30000, "discount": 20},
+
+    {"name": "Tablet", "price": 25000, "discount": 10},
+    {"name": "Monitor", "price": 12000, "discount": 8},
+    {"name": "Keyboard", "price": 2000, "discount": 5},
+    {"name": "Mouse", "price": 1000, "discount": 0},
+    {"name": "Printer", "price": 15000, "discount": 12},
+
+    {"name": "Smartwatch", "price": 7000, "discount": 18},
+    {"name": "Speaker", "price": 3500, "discount": 10},
+    {"name": "PowerBank", "price": 1800, "discount": 7},
+    {"name": "Router", "price": 2500, "discount": 5},
+    {"name": "HardDisk", "price": 6000, "discount": 15},
+
+    {"name": "SSD", "price": 5500, "discount": 20},
+    {"name": "Webcam", "price": 2200, "discount": 10},
+    {"name": "Microphone", "price": 3000, "discount": 12},
+    {"name": "Projector", "price": 40000, "discount": 25},
+    {"name": "Drone", "price": 75000, "discount": 30},
+
+    {"name": "TV", "price": 45000, "discount": 18},
+    {"name": "GamingConsole", "price": 38000, "discount": 15},
+    {"name": "VRHeadset", "price": 20000, "discount": 22},
+    {"name": "GraphicsCard", "price": 65000, "discount": 10},
+    {"name": "Motherboard", "price": 12000, "discount": 8}
+]
+
+# Real world use case of map -> find me prices after discounts 
+
+# find me prices after discounts  (How To DO - Imperative)
+prices_after_discount = []
+for product in products:
+    print(product)
+    price = product['price']
+    print(price)
+    discount = product['discount']
+    print(discount)
+    
+    price_after_discount = price - (price * discount / 100)
+    print(price_after_discount)
+    prices_after_discount.append(price_after_discount)
+    
+print(prices_after_discount)
+
+
+# find me prices after discounts  (What To DO - Declarative)
+print(list(map((lambda product: product['price'] - product['price'] * product['discount']/100), products)))    
+
+prices_after_discount = list(map((lambda product: product['price'] - product['price'] * product['discount']/100), products))
+print("Prices After Discount: ",prices_after_discount)
+
+# Without filter() 
+# Write a script/program to take a list of numbers and return the even list of numbers 
+# [1,2,3,4,5,6,7,8,9,10]    ==>     [2,4,6,8,10]
+
+def even_list(numbers):
+    evened_list = []
+    for num in numbers:
+        if num % 2 == 0:
+            evened_list.append(num)
+    return evened_list
+
+print(even_list([1,2,3,4,5,6,7,8,9,10]))
+
+
+# With filter() 
+# Write a script/program to take a list of numbers and return the even list of numbers 
+# [1,2,3,4,5,6,7,8,9,10]    ==>     [2,4,6,8,10]
+print(filter((lambda num: num % 2 == 0), [1,2,3,4,5,6,7,8,9,10]))
+print(list(filter((lambda num: num % 2 == 0), [1,2,3,4,5,6,7,8,9,10])))
+
+# Real World Use Case Of Working with Lambda & Higher Order Functions 
+products = [
+    {"name": "Laptop", "price": 80000, "discount": 10},
+    {"name": "Phone", "price": 50000, "discount": 5},
+    {"name": "Headphones", "price": 2000, "discount": 15},
+    {"name": "Charger", "price": 1500, "discount": 0},
+    {"name": "Camera", "price": 30000, "discount": 20},
+
+    {"name": "Tablet", "price": 25000, "discount": 10},
+    {"name": "Monitor", "price": 12000, "discount": 8},
+    {"name": "Keyboard", "price": 2000, "discount": 5},
+    {"name": "Mouse", "price": 1000, "discount": 0},
+    {"name": "Printer", "price": 15000, "discount": 12},
+
+    {"name": "Smartwatch", "price": 7000, "discount": 18},
+    {"name": "Speaker", "price": 3500, "discount": 10},
+    {"name": "PowerBank", "price": 1800, "discount": 7},
+    {"name": "Router", "price": 2500, "discount": 5},
+    {"name": "HardDisk", "price": 6000, "discount": 15},
+
+    {"name": "SSD", "price": 5500, "discount": 20},
+    {"name": "Webcam", "price": 2200, "discount": 10},
+    {"name": "Microphone", "price": 3000, "discount": 12},
+    {"name": "Projector", "price": 40000, "discount": 25},
+    {"name": "Drone", "price": 75000, "discount": 30},
+
+    {"name": "TV", "price": 45000, "discount": 18},
+    {"name": "GamingConsole", "price": 38000, "discount": 15},
+    {"name": "VRHeadset", "price": 20000, "discount": 22},
+    {"name": "GraphicsCard", "price": 65000, "discount": 10},
+    {"name": "Motherboard", "price": 12000, "discount": 8}
+]
+
+# Find the Premium Products i.e product with price above 25000
+# Without filter()
+premium_products = []
+
+for product in products:
+    price = product['price']
+    if price > 25000:
+        premium_products.append(product)
+
+print("All Products: ",products)        
+print("Premium Products: ",premium_products)
+print(premium_products[0]['name'], premium_products[0]['price'])
+print("=" * 20)
+# Find the Premium Products i.e product with price above 25000
+# With filter()
+print(list(filter((lambda product: product['price'] > 25000), products)))
+premium_products = list(filter((lambda product: product['price'] > 25000), products))
+print("=" * 20)
+print("Premium Products: ",premium_products)
+
+print("=" * 50)
+
+for product in premium_products:
+    print(product['name'], product['price'])
+    
+# Real World Data Looks and Comes like this in the form of a "file" (csv & xls files) 
+# https://e.nodegoat.net/CMS/upload/guide-import_person_spreadsheet_excel.png

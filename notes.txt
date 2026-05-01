@@ -1607,3 +1607,23 @@ class - 23
                 -> NOTE: Just Like Using For Loop with function
 
                     -> Using the map() Function (Data Transformation)
+
+class - 24
+==========
+
+    -> filter()
+
+        -> The filter() function in Python is a built-in function used to construct an iterator 
+        from elements of an iterable for which a function returns true. 
+        It is a powerful tool for "selectively extracting data" based on a "given condition".
+
+        -> syntax
+
+            filter(function, iterable)
+
+            -> NOTE: Just Like Using For Loop with Conditions 
+
+    
+    -> Implement Functional Style Of Programming With CRUD Application (curd_app)
+
+        -> Additionally Implement "Search Students By Skill" - Use Lambda & Higher Order Functions 
