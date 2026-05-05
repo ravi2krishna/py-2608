@@ -1686,3 +1686,96 @@ class - 25
                     -> import module (imports complete module i.e loading all Functionalities) 
 
                     -> from module import specific_functionality (import only what you need)  (recommended)
+
+
+class - 26
+==========
+
+    -> Reusability
+
+        -> A Block Of Code - functions (call with function_name)
+
+        -> A File Of Code - modules (call with file_name)
+
+        -> A Folder Of Code - packages (wall with folder_name)
+
+    
+    -> Packages 
+
+        -> A folder with multiple "modules" (multiple python files)
+
+        -> A package contains a special file named as __init__.py 
+
+        -> __init__.py, it can be blank, but generally we keep 
+        start up initial data or start up configurations 
+
+        -> In order to use package, use name of the folder
+
+
+
+
+    -> File Management With Python 
+
+        ->  After executing 12_functions/app.py 
+        we can confirm data is being stored "Temporarily" 
+
+        -> All the activities we performed so far, were dealing with
+        "Non-Persistent" Storage (RAM / MEMORY)
+
+            -> Non-Persistent Storage is "Temporary" 
+
+        -> Now the Requirement is to work with "Persistent" Storage (HARD DISK)
+
+            -> Persistent Storage is "Permanent" 
+
+    
+    -> File Operations 
+
+        -> CRUD 
+
+            -> Create File 
+            -> Read File 
+            -> Update File 
+            -> Delete File
+
+    
+    -> To Work with any type of file, python has provided 
+
+        -> open() 
+
+            -> Modes 
+
+                -> r - read 
+                -> w - write 
+                -> a - append
+                -> etc 
+
+
+            -> Syntax - 1
+
+                -> file = open("file_path","mode")
+
+                    file = open("file.txt","r")
+
+                -> NOTE: Here we need to "explicitly close" files after 
+                operations are performed 
+
+
+            -> Syntax - 2 (Recommended Way)
+
+                with open("file_path","mode") as alias_name:
+                    statements 
+
+                with open("file.txt","r") as file_data:
+                    statements     
+
+                -> NOTE: Here "implicitly files are closed", 
+                after operations are performed 
+
+    
+    -> Reading From File - "r" mode 
+
+        -> read()
+        -> readline()
+        -> readlines()
+
