@@ -52,3 +52,40 @@ with open("14_file_manage/file.txt","r") as file_data:
 # Before Writing, Let's create file 
 with open("14_file_manage/write.txt","w") as file_data:
     print(file_data)
+
+# Write The Data To File
+with open("14_file_manage/write.txt","w") as file_data:
+    file_data.write("Hello")
+    
+# Write The Data To File Multiple Lines
+with open("14_file_manage/write.txt","w") as file_data:
+    file_data.writelines(['Hello there \n', 'how are you'])
+    
+# Append Mode 
+with open("14_file_manage/write.txt","a") as file_data:
+    file_data.writelines(['this is \n', 'new line'])
+    
+# Create Folder / Directory
+directory_name = "14_file_manage/students_data"
+# os.mkdir(directory_name)
+import os 
+# os.mkdir(directory_name)
+
+if not os.path.exists(directory_name):
+    os.mkdir(directory_name)
+
+# Create file in students_data directory 
+with open("14_file_manage/students_data/students.txt","w") as file_data:
+    print(file_data)
+    
+# Delete File 
+os.remove("14_file_manage/students_data/students.txt")
+
+# Delete Empty Directory 
+os.rmdir(directory_name)
+
+# Delete Non-Empty Directory 
+import shutil
+# Deletes the folder and all its contents recursively
+shutil.rmtree("14_file_manage/data")
+
