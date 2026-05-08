@@ -69,3 +69,39 @@ print(type(string_data))
 dict_data = json.loads(string_data)
 print(type(dict_data))
 print(dict_data)
+
+# Assume i'm a full stack developer 
+# Requirement: We have an API, when requested we are getting JSON Data 
+# https://dummyjson.com/
+
+import requests
+url = 'https://dummyjson.com/users'
+response = requests.get(url)
+print("HTTP Status Code: ",response.status_code)
+print(response)
+print(type(response))
+print(response.text)
+print(type(response.text))
+
+data_fetched = response.text
+api_data = json.loads(data_fetched)
+print(type(api_data))
+
+# Requirements: Find Number Of Users in the platform 
+all_users = api_data['users']
+print(all_users)
+print("Number Of Users in platform: ",len(all_users))
+
+# Requirements: Fetch all the usernames Of Users in the platform 
+for user in all_users:
+    print(user['id'], user['username'])
+    
+
+# Requirements: Fetch all the usernames Of Young Users in the platform i.e aged below 30
+print("=" * 50)
+print("         Young Users In Platform")
+print("=" * 50)
+for user in all_users:
+    if user['age'] < 30:
+        print(user['id'], user['username'])
+        
