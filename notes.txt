@@ -1893,3 +1893,26 @@ class - 29
     Students information should be stored on Disk 
 
     
+class - 30
+==========
+
+    -> Exception Handling 
+
+        -> Exception: It's an "Error", which might occur during the program execution 
+
+        -> By default when python encounters an Error, 
+        it abruptly "STOPS" the program execution
+
+        -> To change the above default behavior, and handle the 
+        Exceptions by yourself, we need following
+
+            -> try: used to keep the code, that will cause error 
+
+            -> except: used to keep the code, that should run when error occurs 
+
+        -> Different Exception Messages For Different Errors
+
+            -> else: used to keep the code that should run, if No Exception was raised in try block
+
+            -> finally: used to keep the code that should run, whether an exception raised or not 
+            DB / Files -> closing connections will be in done in finally block 

@@ -5,4 +5,18 @@
             90,
             80
         ],
-        "skills": 
+        "skills": [
+            "git",
+            "python"
+        ]
+    },
+    "102": {
+        "name": "Krishna",
+        "scores": [
+            90
+        ],
+        "skills": [
+            "python"
+        ]
+    }
+}
