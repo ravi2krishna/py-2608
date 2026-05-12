@@ -223,3 +223,64 @@ finally:
     print("Program Execution Completed")
 
 print("=" * 50)
+
+# Create Custom Exceptions 
+class MyCustomError(Exception):
+    pass 
+
+age = int(input("Enter Age: "))
+if age < 18:
+    print("You Cannot Vote")
+else:
+    print("You Can Vote")
+    
+# Create Custom Age Exception
+class UnderAgeError(Exception):
+    pass 
+
+# Voting App with Custom Age Exception
+age = int(input("Enter Age: "))
+if age < 18:
+    print("You Cannot Vote")
+    # raise UnderAgeError # UnderAgeError
+else:
+    print("You Can Vote")
+    
+# Voting App with Custom Age Exception and Message
+age = int(input("Enter Age: "))
+if age < 18:
+    print("You Cannot Vote")
+    # raise UnderAgeError("Below 18 Cannot Vote") # UnderAgeError: Below 18 Cannot Vote
+else:
+    print("You Can Vote")
+
+class IDError(Exception):
+    pass     
+
+# Voting App with Multiple Custom Exceptions and Message
+# age = int(input("Enter Age: "))
+# if age < 18:
+#    raise UnderAgeError("Below 18 Cannot Vote") # UnderAgeError: Below 18 Cannot Vote 
+# else:
+#     has_id = input("Do You have ID ? (yes/no) ")
+#     if has_id != "yes":
+#         raise IDError("Without ID Cannot Vote")
+# print("You Can Vote")
+
+# Voting App with Multiple Custom Exceptions and Message -> Handle Exceptions
+age = int(input("Enter Age: "))
+try:
+    if age < 18:
+        raise UnderAgeError("Below 18 Cannot Vote") # UnderAgeError: Below 18 Cannot Vote 
+    else:
+        has_id = input("Do You have ID ? (yes/no) ")
+        if has_id != "yes":
+            raise IDError("Without ID Cannot Vote")
+except UnderAgeError:
+    print("You are not 18 yet")
+except IDError:
+    print("Carrying ID is mandatory")
+else:
+    print("You Can Vote")
+finally:
+    print("Program Closed")
