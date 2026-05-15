@@ -2309,3 +2309,107 @@ class - 33
         -> Hybrid Inheritance
 
             -> Combination Of Types Of Inheritance
+
+
+class - 34
+==========
+
+    -> Encapsulation
+
+        -> Encapsulation is a core concept in object-oriented programming (OOP) that "binds"
+        data(variables) and the methods that operate on data into a single unit called Class 
+
+        -> Binding Of Data(Variables) and Methods is done in Classes 
+
+            -> https://www.cincom.com/wp-content/uploads/2025/08/ENCAPSULATION-01.webp
+
+        -> Encapsulation process also involves "restricting" direct access to an 
+        object's internal state, which is a principle known as "data hiding" 
+
+        -> Other Languages like Java or C++ "enforces" Strict Rules for Encapsulation,  
+        coming to python there is no Strict enforcing. 
+
+            -> Java/C++ = “You’re not allowed” 
+
+            -> Python = “You shouldn’t, but you can if you insist”
+
+        -> While Python does not have strict access modifiers like "private" or "protected" 
+        keywords found in some other languages, 
+        python uses "naming conventions" to indicate the visibility of members.
+
+        -> Hiding Data 
+
+            -> We have public access 
+
+                -> Without any special naming conventions or prefixes 
+                are considered as public and can be accessed from anywhere 
+
+            
+            -> We have private access 
+
+                -> prefixed with a double underscore (__)
+
+                -> cannot be accessed from outside 
+
+                -> In python there is no Strict enforcing
+
+                -> Python = “You shouldn’t, but you can if you insist”
+
+                -> print(obj._MyClass__private_variable) # Accessing through mangled name is possible
+
+            -> We have protected access 
+
+                -> prefixed with a single underscore (_)
+
+                -> cannot be accessed from outside, but can be accessed in sub classes  
+
+        
+        -> NOTE: The prefix / naming conventions, are "signals to other Developers"
+        that the attributes are intended for internal use only 
+
+
+    
+    -> Abstraction 
+
+        -> Abstraction in OOP is a principle that involves "hiding" complex "implementation" 
+        details and showing only the essential features of an object to the user.
+
+        -> Hiding implementation: means "hiding the internal workings" of an object 
+        and present a simplified view. 
+        
+        -> For example, when using an ATM, 
+        you only  interact with a simple interface (card, PIN, cash dispenser) without needing 
+        to know the complex process of backend banking operations that occur. 
+
+    
+    -> How To achieve Abstraction In Python 
+
+        -> Using Abstract Class 
+
+        -> NOTE: Till now what ever the classes we created so far, are Concrete Classes 
+
+        -> An Abstract Class In Python Functions as a "blueprint" for Other Classes,
+        defining a common structure that subclasses must adhere to.
+
+        -> Abstract Class cannot be instantiated directly, meaning you 
+        cannot create objects to Abstract Class 
+
+        -> NOTE: Abstract Classes help you enforce Contract Like Behaviors
+
+        -> Abstract classes are Implemented in Python Using 
+        "abc" module (Abstract Base Class)
+
+            -> from abc import ABC, abstractmethod 
+
+        -> NOTE: To Achieve abstraction, Create a class that inherits from ABC, 
+        inside this class define one or more abstract methods using @abstractmethod decorator  
+
+            -> NOTE: abstract methods have declarations, but no implementation 
+            they typically contain only pass 
+
+        -> Implement Subclasses: Create Concrete Subclasses (Regular Classes)
+        that inherit from abstract class, these Subclasses must Implement 
+        all abstract methods which are defined in abstract class.
+        If a subclass fails to Implement any abstract method, it will also
+        become abstract class and cannot be instantiated
+
